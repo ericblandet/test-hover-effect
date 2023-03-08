@@ -1,0 +1,29 @@
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center
+}
+
+.img-container {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pic {
+    background-image: url("../images/default_picture.jpg");
+    background-size: 160px 160px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 20px auto 20px auto;
+    filter: blur(1.5px);
+    -webkit-filter: blur(1px);
+    transition: all 0.3s;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}

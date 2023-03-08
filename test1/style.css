@@ -1,0 +1,104 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center
+}
+
+.img-container {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#top-left,
+#top-center,
+#top-right,
+#center-left,
+#center-center,
+#center-right,
+#bottom-left,
+#bottom-center,
+#bottom-right {
+    background-image: url("../images/default_picture.jpg");
+    background-size: 160px 160px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 20px auto 20px auto;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+#top-left:hover,
+#top-center:hover,
+#top-right:hover,
+#center-left:hover,
+#center-center:hover,
+#center-right:hover,
+#bottom-left:hover,
+#bottom-center:hover,
+#bottom-right:hover {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+
+
+
+#top-left:hover~#center-center {
+    background-image: url("../images/arrows/top-left.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+#top-center:hover~#center-center {
+    background-image: url("../images/arrows/top-center.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+#top-right:hover~#center-center {
+    background-image: url("../images/arrows/top-right.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+#center-left:hover~#center-center {
+    background-image: url("../images/arrows/center-left.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+
+#center-right:hover~#center-center {
+    background-image: url("../images/arrows/center-right.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+#center-left:hover~#center-center {
+    background-image: url("../images/arrows/bottom-left.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+#bottom-center:hover~#center-center {
+    background-image: url("../images/arrows/bottom-center.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+#bottom-right:hover~#center-center {
+    background-image: url("../images/arrows/bottom-right.png");
+    background-size: 160px 160px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
